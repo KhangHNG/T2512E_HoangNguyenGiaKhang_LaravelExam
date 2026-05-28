@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <!-- CSS Tùy biến để bắt chước giao diện chuẩn trong ảnh image_cc5021.png -->
     <style>
         .vstore-header {
             background-color: #D05A3F;
@@ -9,7 +8,7 @@
             padding: 15px 40px;
             font-size: 32px;
             font-weight: bold;
-            margin-top: -32px; /* Triệt tiêu khoảng trống nếu layout bọc ngoài có margin */
+            margin-top: -32px;
         }
         .vstore-header span {
             font-weight: normal;
@@ -52,7 +51,7 @@
             border: none;
         }
         .vstore-table tbody tr {
-            border-bottom: none; /* Giao diện phẳng, không kẻ viền rõ ràng */
+            border-bottom: none;
         }
 
         .action-icon {
@@ -63,21 +62,17 @@
         }
     </style>
 
-    <!-- Header theo ảnh mẫu -->
     <div class="vstore-header">
         V_Store <span>Items</span>
     </div>
 
     <div class="max-w-7xl mx-auto px-10 mb-24">
-        <!-- Tiêu đề chính giữa -->
         <h1 class="vstore-title">Sale Items</h1>
 
-        <!-- Nút Add New -->
         <a href="{{ route('items.create') }}" class="vstore-btn-add">
             Add New
         </a>
 
-        <!-- Bảng danh sách sản phẩm -->
         <div class="overflow-x-auto">
             <table class="vstore-table">
                 <thead>
@@ -88,7 +83,7 @@
                     <th style="width: 15%;">Quantity</th>
                     <th style="width: 20%;">Expired date</th>
                     <th style="width: 12%;">Note</th>
-                    <th style="width: 10%;"></th> <!-- Cột trống chứa icon hành động -->
+                    <th style="width: 10%;"></th>
                 </tr>
                 </thead>
                 <tbody>

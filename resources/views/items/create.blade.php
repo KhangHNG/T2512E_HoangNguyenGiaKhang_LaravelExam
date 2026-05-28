@@ -22,13 +22,6 @@
         .vstore-btn-orange:hover {
             background-color: #B84D34;
         }
-        .vstore-text-orange {
-            color: #D05A3F;
-        }
-        .focus-orange:focus {
-            border-color: #D05A3F;
-            box-shadow: 0 0 0 3px rgba(208, 90, 63, 0.15);
-        }
     </style>
 
     <div class="vstore-header">
